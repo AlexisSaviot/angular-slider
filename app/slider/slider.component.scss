@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap";
+@import '~swiper/swiper-bundle';
+
+.slider {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1px solid #ddd;
+
+    .slider-image {
+        max-height: 270px;
+        max-width: 270px;
+        height: 270px;
+        width: 270px;
+        margin: 0;
+
+        @media screen and (max-width: 1024px) {
+            height: 165px;
+            width: 165px;
+        }
+    }
+}

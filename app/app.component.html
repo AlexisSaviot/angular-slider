@@ -1,0 +1,2 @@
+<app-slider *ngIf="slider.imagesPerSlide === 1" [slides]="slider.slides"></app-slider>
+<app-single-slider *ngIf="slider.imagesPerSlide > 1" [slides]="slider.slides" [imagesPerSlide]="slider.imagesPerSlide"></app-single-slider>

@@ -1,0 +1,12 @@
+<div class="single-slider">
+    <h2>Vous pourriez aimer aussi :</h2>
+    <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" >
+        <ng-template ngbSlide *ngFor="let group of groupSlides">
+            <div class="wrapper">
+                <ng-container *ngFor="let slide of group">
+                    <a [href]="slide.url"><img class="single-slider-image" [src]="slide.image" [attr.alt]="slide.title"></a>
+                </ng-container>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

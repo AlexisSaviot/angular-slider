@@ -1,0 +1,9 @@
+<div class="slider">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let slide of slides">
+      <div class="picsum-img-wrapper">
+        <a [href]="slide.url"><img class="slider-image" [src]="slide.image" [attr.alt]="slide.title"></a>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
